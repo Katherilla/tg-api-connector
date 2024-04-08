@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TgChatIdController;
+use App\Models\TgChatId;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/hello', function () {
-    return 'Hello, Katya!';
-});
 Route::get('/', function () {
-    return view('welcome');
+    return "hello from tg-api-connector";
+
 });
+
+Route::get('/hello', 'TgChatIdController@daily_report');
