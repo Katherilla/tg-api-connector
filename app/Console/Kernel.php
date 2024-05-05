@@ -18,7 +18,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->call(function (){
             TgChatIdController::daily_report();
-        })->everyMinute();
+        })->dailyAt('09:00');
     }
 
     /**
