@@ -12,6 +12,6 @@ class TgChatIdController extends Controller
     }
 
     public static function get_all_groups() {
-        GetAllGroupsAction::handle();
+        return GetAllGroupsAction::handle();
     }
 }
