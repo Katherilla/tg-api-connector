@@ -14,4 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('get_all_groups/', 'TgChatIdController@get_all_groups');
+
 
